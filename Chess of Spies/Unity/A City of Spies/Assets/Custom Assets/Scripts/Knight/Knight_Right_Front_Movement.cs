@@ -45,7 +45,7 @@ public class Knight_Right_Front_Movement : MonoBehaviour {
 		}
 
 		if (knightPosition.rightFrontSelected == true && knightPosition.ableToMove == true) {
-			player.gameObject.transform.position = new Vector3 (knightPosition.playerXPosition + 1, 0.2f, knightPosition.playerZPosition + 2);
+			player.gameObject.transform.position = new Vector3 (knightPosition.playerXPosition - 1, 0.2f, knightPosition.playerZPosition + 2);
 			knightPosition.playerNorth = true;
 			//knightModel.gameObject.transform.Rotate (knightModel.gameObject.transform.rotation.x, 90f, knightModel.gameObject.transform.rotation.z, Space.World);
 			nextMoveMaterial.color = Color.white;

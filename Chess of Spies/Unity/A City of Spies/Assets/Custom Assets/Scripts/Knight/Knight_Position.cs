@@ -10,7 +10,8 @@ public class Knight_Position : MonoBehaviour {
 
 	public GameObject knightModel;
 
-	//public GameObject Other = GameObject.FindGameObjectWithTag("Piece");
+	public GameObject otherPiece;
+	public Vector3 otherPiecePosition;
 
 	public bool playerNorth = false;
 	public bool playerEast = false;
@@ -31,6 +32,8 @@ public class Knight_Position : MonoBehaviour {
 	public bool ableToMove = false;
 
 	public float timeSinceMove = 0;
+
+	public float pawnsCaptured = 0;
 
 
 	// Use this for initialization
@@ -57,8 +60,12 @@ public class Knight_Position : MonoBehaviour {
 //
 //	}
 	
+
 	// Update is called once per frame
 	void Update () {
+
+		//GameObject otherPiece = GameObject.FindWithTag ("Piece");
+		//otherPiecePosition = otherPiece.transform.position;
 
 //		if (gameObject.tag.transform.position == Other.transform.position) {
 //			int otherTimeSinceMove = Other.timeSinceMove;
@@ -106,7 +113,18 @@ public class Knight_Position : MonoBehaviour {
 		timeSinceMove += Time.deltaTime;
 
 
-		//gameObject.transform.position = playerPosition;
-	
+		if (Input.GetKey (KeyCode.A)) {
+			knightModel.gameObject.transform.Rotate (0, 300 * Time.deltaTime, 0);
+		}
+		if (Input.GetKey (KeyCode.D)) {
+			knightModel.gameObject.transform.Rotate (0, -300 * Time.deltaTime, 0);
+		}
+//		if (Input.GetKey (KeyCode.W)) {
+//			knightModel.gameObject.transform.Rotate ( 0, 0, 100 * Time.deltaTime);
+//		}
+//		if (Input.GetKey (KeyCode.S)) {
+//			knightModel.gameObject.transform.Rotate (0, 0,  -100 * Time.deltaTime);
+//		}
+//	
 	}
 }

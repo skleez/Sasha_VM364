@@ -36,6 +36,8 @@ public class Pawn_Position : MonoBehaviour {
 	public bool nextMoveZPlus = false;
 	public bool nextMoveZMinus = false;
 
+	public Knight_Position knightPosition;
+
 	void OnTriggerEnter (Collider other) {
 		if (other.gameObject.tag == "Piece") {
 			Destroy(other.gameObject);
@@ -153,6 +155,16 @@ public class Pawn_Position : MonoBehaviour {
 			nextMoveZMinus = false;
 			waitTime += timeAdded;
 			timeSinceMove = 0;
+		}
+
+		if ((knightPosition.playerXPosition == gameObject.transform.position.x) && (knightPosition.playerZPosition == gameObject.transform.position.z)) {
+			if (timeSinceMove < knightPosition.timeSinceMove) {
+				Destroy(knightPosition.gameObject);
+			}
+			if (timeSinceMove > knightPosition.timeSinceMove) {
+				Destroy(gameObject);
+				knightPosition.pawnsCaptured += 1; 
+			}
 		}
 	
 	}
