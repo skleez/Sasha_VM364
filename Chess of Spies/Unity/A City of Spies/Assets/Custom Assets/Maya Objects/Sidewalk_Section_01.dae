@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2016-01-13T20:44:55Z</created><keywords></keywords><modified>2016-01-13T20:44:55Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_images>
+    <image id="file4-image" name="file4"><init_from>file:///Volumes/Sasha Kleszy LaCie/Chess of Spies/Maya/Chess_of_Spies/sourceimages/Sidewalk_Black.png</init_from></image>
+    <image id="White_Material_file-image" name="White_Material_file"><init_from>file:///Volumes/Sasha Kleszy LaCie/Chess of Spies/Maya/Chess_of_Spies/sourceimages/Sidewalk_White.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="Black_Material" name="Black_Material">
+      <instance_effect url="#Black_Material-fx"/>
+    </material>
+    <material id="White_Material" name="White_Material">
+      <instance_effect url="#White_Material-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Black_Material-fx" name="Black_Material">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file4-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="White_Material-fx" name="White_Material">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="White_Material_file-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="pPlane70-lib" name="pPlane70Mesh">
+      <mesh>
+        <source id="pPlane70-POSITION">
+          <float_array id="pPlane70-POSITION-array" count="120">
+6.000000 0.200000 2.025187
+8.000000 0.200000 2.025187
+6.000000 0.200000 0.025187
+8.000000 0.200000 0.025187
+6.000000 0.000000 2.025187
+6.000000 0.200000 2.025187
+6.000000 0.000000 1.025187
+6.000000 0.200000 1.025187
+6.000000 0.000000 0.025187
+6.000000 0.200000 0.025187
+6.000000 0.000000 4.025187
+6.000000 0.200000 4.025187
+6.000000 0.000000 3.025187
+6.000000 0.200000 3.025187
+6.000000 0.000000 2.025187
+6.000000 0.200000 2.025187
+6.000000 0.200000 4.025187
+8.000000 0.200000 4.025187
+6.000000 0.200000 2.025187
+8.000000 0.200000 2.025187
+6.000000 0.200000 6.025187
+8.000000 0.200000 6.025187
+6.000000 0.200000 4.025187
+8.000000 0.200000 4.025187
+6.000000 0.000000 6.025187
+6.000000 0.200000 6.025187
+6.000000 0.000000 5.025187
+6.000000 0.200000 5.025187
+6.000000 0.000000 4.025187
+6.000000 0.200000 4.025187
+6.000000 0.200000 8.025187
+8.000000 0.200000 8.025187
+6.000000 0.200000 6.025187
+8.000000 0.200000 6.025187
+6.000000 0.000000 8.025187
+6.000000 0.200000 8.025187
+6.000000 0.000000 7.025187
+6.000000 0.200000 7.025187
+6.000000 0.000000 6.025187
+6.000000 0.200000 6.025187
+</float_array>
+          <technique_common>
+            <accessor source="#pPlane70-POSITION-array" count="40" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pPlane70-Normal0">
+          <float_array id="pPlane70-Normal0-array" count="120">
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#pPlane70-Normal0-array" count="40" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pPlane70-UV0">
+          <float_array id="pPlane70-UV0-array" count="80">
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+0.100000 0.000000
+0.100000 0.500000
+0.000000 0.500000
+0.100000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+0.100000 0.000000
+0.100000 0.500000
+0.000000 0.500000
+0.100000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+0.100000 0.000000
+0.100000 0.500000
+0.000000 0.500000
+0.100000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+0.100000 0.000000
+0.100000 0.500000
+0.000000 0.500000
+0.100000 1.000000
+0.000000 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#pPlane70-UV0-array" count="40" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pPlane70-VERTEX">
+          <input semantic="POSITION" source="#pPlane70-POSITION"/>
+          <input semantic="NORMAL" source="#pPlane70-Normal0"/>
+        </vertices>
+        <triangles count="20" material="Black_Material"><input semantic="VERTEX" offset="0" source="#pPlane70-VERTEX"/><input semantic="TEXCOORD" offset="1" set="0" source="#pPlane70-UV0"/><p> 1 1 3 3 0 0 0 0 3 3 2 2 5 5 7 6 4 4 4 4 7 6 6 7 7 6 9 8 6 7 6 7 9 8 8 9 11 11 13 12 10 10 10 10 13 12 12 13 13 12 15 14 12 13 12 13 15 14 14 15 21 21 23 22 20 20 20 20 23 22 22 23 25 25 27 26 24 24 24 24 27 26 26 27 27 26 29 28 26 27 26 27 29 28 28 29 35 35 37 36 34 34 34 34 37 36 36 37 37 36 39 38 36 37 36 37 39 38 38 39</p></triangles>
+        <triangles count="4" material="White_Material"><input semantic="VERTEX" offset="0" source="#pPlane70-VERTEX"/><input semantic="TEXCOORD" offset="1" set="0" source="#pPlane70-UV0"/><p> 17 17 19 18 16 16 16 16 19 18 18 19 31 31 33 32 30 30 30 30 33 32 32 33</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Sidewalk_Section_01" name="Sidewalk_Section_01">
+      <node name="pPlane70" id="pPlane70" sid="pPlane70"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#pPlane70-lib"><bind_material><technique_common><instance_material symbol="Black_Material" target="#Black_Material"/><instance_material symbol="White_Material" target="#White_Material"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>24.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.041667</start_time><end_time>8.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Sidewalk_Section_01"></instance_visual_scene>
+  </scene>
+</COLLADA>
