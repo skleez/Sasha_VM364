@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Knight_Position : MonoBehaviour {
+public class Player_Position : MonoBehaviour {
 
 	public float playerXPosition = -5.5f;
 	public float playerZPosition = 5.5f;
@@ -32,6 +32,9 @@ public class Knight_Position : MonoBehaviour {
 	public bool ableToMove = false;
 
 	public float timeSinceMove = 0;
+
+	public GameObject[] pawns;
+	public Vector3[] pawnLocations;
 
 	public float pawnsCaptured = 0;
 
@@ -77,22 +80,40 @@ public class Knight_Position : MonoBehaviour {
 //			}
 //		}
 
-		if (playerNorth == true) {
-			knightModel.gameObject.transform.localEulerAngles = new Vector3 (0, 90, 0);
-			playerNorth = false;
+		pawns = GameObject.FindGameObjectsWithTag ("Pawn");
+	
+		foreach (GameObject pawn in pawns) {
+			float pawnPositionX = pawn.transform.position.x;
+			float pawnPositionZ = pawn.transform.position.z;
+			float pawnTimeSinceMove = pawn.GetComponent<Pawn_Position> ().timeSinceMove;
+			if ((pawnPositionX == playerXPosition) && (pawnPositionZ == playerZPosition)) {
+				if (timeSinceMove < pawnTimeSinceMove) {
+					Destroy (pawn);
+					pawnsCaptured += 1;
+				}
+				if (timeSinceMove > pawnTimeSinceMove) {
+					Destroy (gameObject);
+				}
+			}
 		}
-		if (playerSouth == true) {
-			knightModel.gameObject.transform.localEulerAngles = new Vector3 (0, 270, 0);
-			playerSouth = false;
-		}
-		if (playerWest == true) {
-			knightModel.gameObject.transform.localEulerAngles = new Vector3 (0, 0, 0);
-			playerWest = false;
-		}
-		if (playerEast == true) {
-			knightModel.gameObject.transform.localEulerAngles = new Vector3 (0, 180, 0);
-			playerEast = false;
-		}
+
+
+//		if (playerNorth == true) {
+//			knightModel.gameObject.transform.localEulerAngles = new Vector3 (0, 90, 0);
+//			playerNorth = false;
+//		}
+//		if (playerSouth == true) {
+//			knightModel.gameObject.transform.localEulerAngles = new Vector3 (0, 270, 0);
+//			playerSouth = false;
+//		}
+//		if (playerWest == true) {
+//			knightModel.gameObject.transform.localEulerAngles = new Vector3 (0, 0, 0);
+//			playerWest = false;
+//		}
+//		if (playerEast == true) {
+//			knightModel.gameObject.transform.localEulerAngles = new Vector3 (0, 180, 0);
+//			playerEast = false;
+//		}
 
 		playerXPosition = gameObject.transform.position.x;
 		playerZPosition = gameObject.transform.position.z;
