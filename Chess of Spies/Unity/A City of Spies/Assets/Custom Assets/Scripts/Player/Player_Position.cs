@@ -5,10 +5,12 @@ public class Player_Position : MonoBehaviour {
 
 	public float playerXPosition = -5.5f;
 	public float playerZPosition = 5.5f;
+	public float playerYPosition = 0.2f;
 
 	public Vector3 playerPosition;
 
 	public GameObject knightModel;
+	public GameObject cameraHinge;
 
 	public GameObject otherPiece;
 	public Vector3 otherPiecePosition;
@@ -27,6 +29,23 @@ public class Player_Position : MonoBehaviour {
 	public bool leftBackSelected = false;
 	public bool leftFrontSelected = false;
 
+	public float[,] sidewalkSquares = new float[,] {{-7.5f,7.5f},{-6.5f,7.5f},{-5.5f,7.5f},{-4.5f,7.5f},{-3.5f,7.5f},{-2.5f,7.5f},{-1.5f,7.5f},{-0.5f,7.5f},
+		{0.5f,7.5f},{1.5f,7.5f},{2.5f,7.5f},{3.5f,7.5f},{4.5f,7.5f},{5.5f,7.5f},{6.5f,7.5f},{7.5f,7.5f},
+		{8.5f,7.5f},{9.5f,7.5f},{10.5f,7.5f},{11.5f,7.5f},{12.5f,7.5f},{13.5f,7.5f},{14.5f,7.5f},{15.5f,7.5f},
+		{16.5f,7.5f},{17.5f,7.5f},{18.5f,7.5f},{19.5f,7.5f},{20.5f,7.5f},{21.5f,7.5f},{22.5f,7.5f},{23.5f,7.5f},
+		{-7.5f,6.5f},{-6.5f,6.5f},{-5.5f,6.5f},{-4.5f,6.5f},{-3.5f,6.5f},{-2.5f,6.5f},{-1.5f,6.5f},{-0.5f,6.5f},
+		{0.5f,6.5f},{1.5f,6.5f},{2.5f,6.5f},{3.5f,6.5f},{4.5f,6.5f},{5.5f,6.5f},{6.5f,6.5f},{7.5f,6.5f},
+		{8.5f,6.5f},{9.5f,6.5f},{10.5f,6.5f},{11.5f,6.5f},{12.5f,6.5f},{13.5f,6.5f},{14.5f,6.5f},{15.5f,6.5f},
+		{16.5f,6.5f},{17.5f,6.5f},{18.5f,6.5f},{19.5f,6.5f},{20.5f,6.5f},{21.5f,6.5f},{22.5f,6.5f},{23.5f,6.5f},
+		{-7.5f,5.5f},{-6.5f,5.5f},{-7.5f,4.5f},{-6.5f,4.5f},{-7.5f,3.5f},{-6.5f,3.5f},{-7.5f,2.5f},{-6.5f,2.5f},
+		{-7.5f,1.5f},{-6.5f,1.5f},{2.5f,1.5f},{3.5f,1.5f},{4.5f,1.5f},{5.5f,1.5f},{6.5f,1.5f},{7.5f,1.5f},
+		{8.5f,1.5f},{9.5f,1.5f},{10.5f,1.5f},{11.5f,1.5f},{12.5f,1.5f},{13.5f,1.5f},{14.5f,1.5f},{15.5f,1.5f},
+		{16.5f,1.5f},{17.5f,1.5f},{-7.5f,0.5f},{-6.5f,0.5f},{2.5f,0.5f},{3.5f,0.5f},{4.5f,0.5f},{5.5f,0.5f},{6.5f,0.5f},{7.5f,0.5f},
+		{8.5f,0.5f},{9.5f,0.5f},{10.5f,0.5f},{11.5f,0.5f},{12.5f,0.5f},{13.5f,0.5f},{14.5f,0.5f},{15.5f,0.5f},
+		{16.5f,0.5f},{17.5f,0.5f}};
+
+	public float sidewalkOneX;
+	public float sidewalkOneZ;
 
 	public float waitTime = 1;
 	public bool ableToMove = false;
@@ -44,7 +63,7 @@ public class Player_Position : MonoBehaviour {
 
 		//playerDirections = 0,1,2,3;
 
-		playerPosition = new Vector3 (playerXPosition, 0.2f, playerZPosition);
+		playerPosition = new Vector3 (playerXPosition, playerYPosition, playerZPosition);
 
 		gameObject.transform.position = playerPosition;
 
@@ -52,33 +71,14 @@ public class Player_Position : MonoBehaviour {
 	
 	}
 
-//	void OnCollisionEnter (Collider other) {
-//
-//		if (other.gameObject.tag == "Piece") {
-//			var piece = other.gameObject.GetComponent<Pawn_Position>;
-//			if (piece){
-//				if (timeSinceMove < piece.timeSinceMove){
-//				}
-//			}
-//
-//	}
+
 	
 
 	// Update is called once per frame
 	void Update () {
 
-		//GameObject otherPiece = GameObject.FindWithTag ("Piece");
-		//otherPiecePosition = otherPiece.transform.position;
-
-//		if (gameObject.tag.transform.position == Other.transform.position) {
-//			int otherTimeSinceMove = Other.timeSinceMove;
-//
-//			if (timeSinceMove < otherTimeSinceMove) {
-//				Destroy(Other);
-//			} else {
-//				Destroy(gameObject);
-//			}
-//		}
+		sidewalkOneX = sidewalkSquares [0, 0];
+		sidewalkOneZ = sidewalkSquares [0, 1];
 
 		pawns = GameObject.FindGameObjectsWithTag ("Pawn");
 	
@@ -117,6 +117,7 @@ public class Player_Position : MonoBehaviour {
 
 		playerXPosition = gameObject.transform.position.x;
 		playerZPosition = gameObject.transform.position.z;
+		playerPosition = new Vector3 (playerXPosition, playerYPosition, playerZPosition);
 
 		//playerDirection = Mathf.Abs((gameObject.transform.rotation.y / 90f) - 4);
 		if (waitTime > 0) {
@@ -140,12 +141,12 @@ public class Player_Position : MonoBehaviour {
 		if (Input.GetKey (KeyCode.D)) {
 			knightModel.gameObject.transform.Rotate (0, -300 * Time.deltaTime, 0);
 		}
-//		if (Input.GetKey (KeyCode.W)) {
-//			knightModel.gameObject.transform.Rotate ( 0, 0, 100 * Time.deltaTime);
-//		}
-//		if (Input.GetKey (KeyCode.S)) {
-//			knightModel.gameObject.transform.Rotate (0, 0,  -100 * Time.deltaTime);
-//		}
-//	
+		if (Input.GetKey (KeyCode.W)) {
+			cameraHinge.gameObject.transform.Rotate ( 0, 0, 100 * Time.deltaTime,Space.Self);
+		}
+		if (Input.GetKey (KeyCode.S)) {
+			cameraHinge.gameObject.transform.Rotate (0, 0,  -100 * Time.deltaTime, Space.Self);
+		}
+	
 	}
 }
