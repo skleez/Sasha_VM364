@@ -21,7 +21,8 @@ If you are playing with an odd number of people, the white team will have an ext
 Do not reveal your team!
 
 #####Pieces
-After teams have been assigned, all players must set up the board together so that they agree on placement, but make sure to first signify the building in the middle 8 squares of the board (non-possible spaces) (c4,c5,d3,d6,e3,e6,f4,f5).
+After teams have been assigned, all players must set up the board together so that they agree on placement. 
+>**Remember to signify the building in the middle 8 squares of the board (non-possible spaces) (c4,c5,d3,d6,e3,e6,f4,f5).**
 
 The pieces that must be placed on the board are:
 
