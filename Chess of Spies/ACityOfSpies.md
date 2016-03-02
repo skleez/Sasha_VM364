@@ -4,7 +4,10 @@
 
 In "A City of Spies," 3 - 6 players will take turns moving and capturing pieces, with the main goal being to have a member of your team as the last piece standing.
 
-The game takes place in rounds, and each round ends when there is only one player remaining, who will earn 2 points for their team. The game ends when a team reaches 5 points.
+The game takes place in rounds, and each round ends when there is only one player remaining.
+This player will win the round, and earn 2 points for their team. 
+
+The game ends when a team reaches 5 points.
 
 ###Set Up
 
