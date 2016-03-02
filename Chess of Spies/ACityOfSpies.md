@@ -47,7 +47,7 @@ If this **Life-Piece** gets captured at any point during the game, that player i
 Players should remember their **Life-Piece**, and then return all the Piece Cards back to the pile.
 
 After every player has recieved a team and a **Life-Piece**, they must draw another card from the **Piece Card** pile. 
-This second **Piece Card** is the player's **Target-Piece**, and will stay in the player's possession until the round ends. 
+This second Piece Card is the player's **Target-Piece**, and will stay in the player's possession until the round ends. 
 
 If a player's **Target-Piece** is captured during their turn, they *may* vocally recognize that their **Target-Piece** was captured, tell everyone which team they are playing for, and then add one point to their team's score.
 
@@ -69,7 +69,7 @@ Pieces move extactly as they do in Chess, **however**:
 
 >there is a *barrier* in the middle of the board that signifies an area where pieces cannot move to.
 
->Pawns can move one square in all directions, up, down, left, and right, and can capture in all diagonal directions.
+>Pawns can move one square in *all* directions, up, down, left, and right, and can capture in all diagonal directions.
 
 If the player captures a piece, that piece is removed from the game. If that piece was someones **Life-Piece**, they must vocally recognize it, and that they are out for the round.
 
