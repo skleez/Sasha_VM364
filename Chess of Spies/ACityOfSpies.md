@@ -21,12 +21,13 @@ Do not reveal your team!
 After teams have been assigned, all players must set up the board together so that they agree on placement, but make sure to first signify the building in the middle 8 squares of the board (non-possible spaces) (c4,c5,d3,d6,e3,e6,f4,f5).
 
 The pieces that must be placed on the board are:
->2 Knights
->2 Bishops
->2 Rooks
->4 Pawns
+
+**2 Knights**
+**2 Bishops**
+**2 Rooks**
+**4 Pawns**
 >(Be sure to signify which piece in each pair is #1, or #2 (or 3, or 4 for pawns))
->1 Queen
+**1 Queen**
 
 
 After the pieces have been placed, each player must choose a piece by randomly picking from the pile of **Piece Cards**.
@@ -54,8 +55,10 @@ Once every player is aware of the turn order, the first player's turn can begin.
 
 When a player's turn starts, they have the option to move any piece to any available square.
 
->Pieces move extactly as they do in Chess, however: 
+Pieces move extactly as they do in Chess, **however**: 
+
 >there is a **barrier** in the middle of the board that signifies an area where pieces cannot move to.
+
 >Pawns can move one square in all directions, up, down, left, and right, and can capture in all diagonal directions.
 
 if the player captures a piece, that piece is removed from the game. If that piece was someones **Life-Piece**, they must vocally recognize it, and that they are out for the round.
@@ -70,6 +73,12 @@ Continue these steps until there is only one active player remaining, that is wh
 
 When the round is over, the last active player must vocally recognize which team they are on, and then add two points to that team's total.
 
-When a team reaches 5 points, the game is over.
+When a team reaches 5 points, the game is over, and that team wins.
 
-If neither team has reached 5 points, reset the board, have all players agree on the placement, redraw **Life-Piece** cards, redraw **Target-Piece** cards, and begin a new round by rolling for turn order.
+If neither team has reached 5 points, restart the game, but just after players draw teams:
+
+1. Reset the board with correct pieces.
+2. Have all players agree on the placement. 
+3. Redraw **Life-Piece** cards
+4. Redraw **Target-Piece** cards 
+5. Begin a new round by rolling for turn order.
