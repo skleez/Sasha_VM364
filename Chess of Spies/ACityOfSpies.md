@@ -92,3 +92,45 @@ If neither team has reached 5 points, restart the game, but just after players d
 >3. Redraw **Life-Piece** cards
 >4. Redraw **Target-Piece** cards 
 >5. Begin a new round by rolling for turn order.
+
+
+
+
+#Playtesting.. A Process
+
+My first idea for this project was a combination of two questions:
+
+>What would chess be like from the point of view of the piece?
+
+and
+
+>In chess the player know exactly which piece is on which side, but what if they didn't?
+
+I built a quick example of what I though a 3rd person-controllable chess piece could be like in a 3D space, but it didn't have any explicit goals that would be engaging or "fun".
+My concept clearly didn't have those pillars, and I needed to go back and review the most basic mechanics of the game, and then determine how effective they actually were.
+
+Once I layed out all of the main contstraints of my idea, I could begin to examine all of my non-constraining mechanics. This seemed straight forward, but it required first finding the most basic element of the non-fun, non-constraining mechanic, and then constructing more complex rules on top of them, but only after those more basic mechanics could be described as "fun". 
+
+I became very focused on the concept of the "point of view of the piece," but in playtests the game was not interesting, and didn't yield the strategies I was expecting, or wanting, to see in players. This lead to multiple itterations of they game where the player's options for control were different. Sometimes each player only could control their **Life-Piece**, and every piece on the board moved at the same time (requiring an "AI" method for non-player pieces), and sometimes the players moved their piece twice, but kept the move secret from all other players. All of these playtests were interesting, but the mechanics introduced were often not built upon eachother, and that made it easy for them to be unballanced, un-engaging, or even un-"fun".
+
+Ultimately, I had to review my initial questions, and come up with more basic ones:
+
+>What if there was only one color?
+>What is the mission of the individual chess piece?
+>How important is the team to chess being multiplayer?
+
+These all lead to the key question of my most recent itteration:
+
+>What if there was only one color, but players could control any piece, and players could capture any piece, have an important **Life-Piece** on the board, but not know which player is on which team?
+
+This lead to a playtest where there was only one color, players chose a **Life-Piece**, players had one move per turn, and last player alive wins.
+Finally this playtest was simple enough to yeild very specific results about only a few mechanics. There was strategy even between two players!
+Now, could this concept translate to multiple players, but still with only two teams? I did a playtest with three players, and found out that the ultimate, last-piece standing was a good goal, but as an indiviudal on a team, the playtesters didn't feel they had a clear goal in the first few rounds of the game.
+Because there weren't other major criticisms with this playtest, I added the new **Target-Piece** mechanic to try and give players a second goal they could persue for their team, but as an individual. I am not sure that this **Target-Piece** will be make the early turns more engaiging, but I am hoping that it will, especially when playing with more players.
+
+This process was difficult, and even though it is not close to over, the strategy of adding mechainics on top of proven working ones (itterative), was very effective at sifting out the stong mechanics from the weak ones. Despite this efficacy, however, I also felt that the itterative process very easily abandoned ideas and concepts, rarely attempting to integrate them, and that a larger-picture (design-document) strategy can be very important to laying out more-engaging and "fun" constraints for your itterations to hold on to. 
+
+
+
+
+
