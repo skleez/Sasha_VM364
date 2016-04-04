@@ -21,4 +21,4 @@ He said that people's reactions are so much more powerful when they experience s
 
 Toward the end of the meetup I was able to actually chat with Chuck and discuss his game. I asked him: "Are you an artist, or an engeneer?" and he responded with: "Well are you an artist or an engeneer?" We laughed a bit, but
 the truth was there. Chuck didn't take a photograph, he didn't paint a painting, he didn't shoot a movie, but he still wants to call himself an artist. He didn't plan a bridge or invent a new plastic, but he still wants to call himself an engeneer. But it can be very hard to call yourself both at the same time.
-There is a reason to make a game over these other things. I believe there is something to be said with the emotional power of games. To make a game you have to engeneer right and wrong choices, you have to engage the player, but ultimately it is about experience.
+There is a reason to make a game over these other things. To make a game you have to engeneer right and wrong choices, you have to engage the player, but ultimately it is about experience and emotion.
