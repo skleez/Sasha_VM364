@@ -1,14 +1,16 @@
 # Getting Started with Unet and Unity Developer Services
 
-###In this tutorial I hope to get you started with a simple but working Unity multiplayer project using Unet.
+###In this tutorial I hope to get you started with a simple, but working, Unity multiplayer project using Unet. Zero Code!!
 
 First things first, lets make a new Unity project:
 
 ![1](http://i.imgur.com/PpFDRs0.png)
 
+
 Next, add a 3D plane for a floor, and Save-As the scene twice. Once as "Main_Scene", and again as "Lobby_Scene".
 
 ![2](http://i.imgur.com/xHsIDSl.png)
+
 
 Next, in your Lobby_Scene, create an empty gameobject, and add the NetworkManager Component, and the NetworkManagerHUD Component to it:
 
@@ -33,13 +35,16 @@ Once all of that is done, go back to the "Network Manager" object. Add the "Play
 
 ![6](http://i.imgur.com/JhCtxdR.png)
 
+
 Next, open up the Main_Scene, and create an empty gameobject. Add a "Network Start Position" component to the object, and place it where you would like the player to spawn. If you have multiple of these, Unity will. by default, choose one at random, and spawn the player there.
 
 ![7](http://i.imgur.com/twBdubn.png)
 
-Thats all you need to do in the Unity scenes! Try exporting a build at this stage, open it up. If you click "LAN Host" it should start your "Main_Scene", and if simultaneously test your game in Unity and select "LAN Client", you should join the same game. 
+####Thats all you need to do in the Unity scenes! Try exporting a build at this stage, open it up. If you click "LAN Host" it should start your "Main_Scene", and if simultaneously test your game in Unity and select "LAN Client", you should join the same game. 
 
-However, if you try to start a game with "Enable Matchmaker", and click "Create Internet Match", you should get an error like this:
+
+
+#####However, if you try to start a game with "Enable Matchmaker", and click "Create Internet Match", you should get an error like this:
 
 ![8](http://i.imgur.com/h4qQokj.png)
 
@@ -61,6 +66,7 @@ Input roughly how many players you expect to play your game at one time (You can
 This will give your project a unique UPID, and a UNET ID, which Unity will use to connect your project to the Multiplayer Service.
 
 ![11](http://i.imgur.com/4R9BaOF.png)
+
 
 Go back to the Unity Application, and search for "Services." You don't want the standard Mac services (located in every single application under the Apple menu), you want Unity's unique Services page, which should open up a new tab where your inspector window is.
 
