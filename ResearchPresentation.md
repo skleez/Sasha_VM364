@@ -70,7 +70,15 @@ This will give your project a unique UPID, and a UNET ID, which Unity will use t
 
 Go back to the Unity Application, and search for "Services." You don't want the standard Mac services (located in every single application under the Apple menu), you want Unity's unique Services page, which should open up a new tab where your inspector window is.
 
+![12](http://i.imgur.com/6BP1RJE.png)
+
 Click on the new Services tab, sign in with your Unity credentials, and connect your Unity project with the project you made earlier on the Unity Developer site.
+
+![13](http://i.imgur.com/6xked9S.png)
+
+When you connect, the Services tab should look like this:
+
+![14](http://i.imgur.com/fhI8SgQ.png)
 
 Thats all there is to it! Try exporting another build, and testing the "Create Internet Match" button. Your second player should be able to find the game using "Find Internet Match", from any other computer.
 
