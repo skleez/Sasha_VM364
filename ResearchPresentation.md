@@ -19,9 +19,10 @@ This "Network Manager" object will contain most of the important information for
 
 Next, we will want to make a player prefab for our game. For this, I created a "Prefab" folder in my project, created a new prefab called "Player", and I dragged the "FPSController" prefab from the Unity Standard Assets onto it.
 
-![4](http://i.imgur.com/x3VvIrc.png)
 
 Once your prefab is set up, you should select it, and in the inspector, add the NetworkIdentity Component to it. Make sure to check the box that says "Local Player Authority" (This means that each player will only be able to control their player).
+
+![4](http://i.imgur.com/x3VvIrc.png)
 
 Next, open up your project's Build Settings, and add the "Lobby_Scene" as Scene 0, and the "Main_Scene" as Scene 1.
 
